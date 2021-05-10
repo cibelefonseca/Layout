@@ -1,0 +1,136 @@
+#tooltip {
+    position: absolute;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(70, 69, 69);
+    pointer-events: none;
+    display: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 3px;
+    background-color: #e6e4e4;
+    padding: 3px;
+    border-radius: 3px;
+    margin: 0px;
+}
+
+.menu {
+    background-color: #c0c0c0;
+    border-radius: 3px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 20px;
+    margin: 0px;
+}
+
+.hamburger-icon {
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    padding-bottom: 2vh;
+}
+
+.hamburger-icon span {
+    height: 1px;
+    width: 30px;
+    background-color: white;
+    display: block;
+    margin: 3px 0px 3px 0px;
+    transition: 0.7s ease-in-out;
+    transform: none;
+}
+
+#time_bars_view {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-top: 10px;
+    /* height: 270px;
+    overflow-y: auto; */
+    background-color: #f7f7f7;
+}
+
+#time_view {
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 35px;
+    margin: 0px;
+    padding: 0px;
+    background-color:  #f7f7f7;
+}
+
+#brush_view {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#frame_view {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+  
+#video_player_view {
+    grid-row-start: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.grid-item {
+    width: 405px;
+    height: 250px;
+    background-color: #f7f7f7;
+    border-radius: 3px;
+}
+
+.grid-item p {
+    background: #c0c0c0;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    padding: 5px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.grid-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#legend {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+  }
+  
+  .legend p {
+    background: #c0c0c0;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 0;
+    padding: 5px;
+    border-radius: 3px 3px 0px 0px;
+  }
+  
+  .legend svg {
+    display: block;
+    margin: auto;
+  }

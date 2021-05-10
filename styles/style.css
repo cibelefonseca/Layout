@@ -1,0 +1,158 @@
+.y-axis line {
+  fill: none;
+  stroke: none;
+}
+
+#objects_checkboxes {
+  width: 150px;
+  height: 1000px;
+  background-color: #f7f7f7;
+  margin: 50px auto;
+  float: left;
+}
+
+#filters {
+    width: 1500px;
+    height: 200;
+    margin-top: 50px;
+    margin: auto;
+    padding: 5px;
+    background-color: #f7f7f7;
+}
+
+.multiselect_object_types {
+    width: 400px;
+  }
+  
+.selectBox {
+  position: relative;
+}
+  
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+  
+#checkboxes_object_types {
+  display: none;
+  border: 1px #dadada solid;
+}
+  
+#checkboxes_object_types label {
+  display: inline-block;
+}
+
+#filter, #clearfilter{
+  display: inline-block;
+}
+
+.sort {
+  margin-top: 20px;
+}
+
+#checkboxes_object_types div{
+  margin-left: 20px;
+}
+
+#checkboxes_object_types {
+  background-color: white;
+  width: 200px;
+}
+
+.bars-visible {
+  opacity: 1;
+}
+
+.bars-invisible {
+  opacity: 0.2;
+}
+
+.label-checkbox {
+  text-align: center;
+}
+
+foreignObject {
+  text-align: center;
+  margin: auto;
+  padding: auto;
+}
+
+input#minutes{
+  width: 50px;
+}
+
+input#minutes_speed{
+  width: 50px;
+}
+
+input#seconds {
+  width: 50px;
+}
+
+input#seconds_speed {
+  width: 50px;
+}
+
+.y-axis .tick text:hover {
+  cursor: pointer;
+}
+
+input#minutes_begin{
+  width: 50px;
+}
+
+input#minutes_end{
+  width: 50px;
+}
+
+input#seconds_begin{
+  width: 50px;
+}
+
+input#seconds_end{
+  width: 50px;
+}
+
+#space_filter {
+  margin-top: 5px;
+}
+
+table {
+  margin: 10px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.brush .selection {
+  stroke: #fff;
+  stroke-opacity: 1;
+  stroke-width: 2px;
+  fill: #fff;
+  fill-opacity: 0.5;
+  shape-rendering: crispEdges;
+}
+
+.y-axis-legend .tick text {
+  font-size: 9px;
+}
+
+div#marker line{
+  position: absolute;
+  z-index: 1;
+}
+
+.label_selected{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.label_not_selected {
+  font-weight: normal;
+}
