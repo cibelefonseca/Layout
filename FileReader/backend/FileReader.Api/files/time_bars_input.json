@@ -1,0 +1,6 @@
+[
+{ "label" : "person0", "start" : 40, "finish" : 352, "meeting" : 0},
+{ "label" : "person1", "start" : 40, "finish" : 330, "meeting" : 0},
+{ "label" : "person2", "start" : 69, "finish" : 352, "meeting" : 0},
+{ "label" : "person3", "start" : 108, "finish" : 350, "meeting" : 0}
+]
