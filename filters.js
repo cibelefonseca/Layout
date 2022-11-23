@@ -114,6 +114,7 @@ frame.control.on('dminimized', (frame, info) => {
 
 // Show JSFrame on webpage
 function showJSFrame(data, start_time, finish_time) {
+    console.log('showJSFrame ',data)
     frame.show()
     showSpeed(data)
     showAllMeetings(data)

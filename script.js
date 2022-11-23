@@ -1,6 +1,6 @@
 function generate(data, detections) {
     var labels = uniqueLabels(data)
-    console.log(labels)
+     console.log('generate labels' ,labels)
     var fps = info.fps
     var chart_height = labels.length * 15 + 25
 
