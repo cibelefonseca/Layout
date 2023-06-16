@@ -57,7 +57,7 @@ function timeFilter(data){
         })
     
     d3.select('#clear_time').on('click', function(){
-        d3.json('detections.json').then(function(data){
+        d3.json(`${files_path}detections.json`).then(function(data){
             console.log(data)
             items = data
             var time_bars = createTimeBarsInputArray(data)

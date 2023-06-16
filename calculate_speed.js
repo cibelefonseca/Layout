@@ -14,8 +14,8 @@ function calculateSpeed(data, seconds_total){
     objects_coordinates = d3.nest()
             .key(function(d){return d.label})
             .entries(items1)
-    //console.log(items)
-    //console.log(items1)
+    // console.log(items)
+    // console.log(items1)
     console.log(objects_coordinates)
 
     var objects_speed = []

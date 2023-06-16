@@ -286,15 +286,12 @@ function showFrameWithBoundingBoxes(frame_number, ratio) {
     })
     //console.log(objects_in_frame)
     var detect = []
-    //console.log(detections)
     for (i in objects_in_frame) {
         var detec = detections.filter(function (d) {
             return d.label == objects_in_frame[i].label
         })
         detect.push(detec[0])
     }
-    //console.log(detect)
-
     var coordinates = []
     detect.filter(function (d, index) {
         //console.log(d)
@@ -348,7 +345,8 @@ function showFrameWithBoundingBoxes(frame_number, ratio) {
 }
 
 function showVideoPlayer(frame_number, ratio, labels, label, meetings, meetings_data) {
-    var video_src = `${files_path}test.mp4`
+    var video_src = `${receivedCurrentPath[1]}`
+    
     var verify = d3.select('#video_player_view').select('.grid-content').select('video')
     if (verify._groups[0][0] != null) {
         var mediaElement = document.getElementById('video');
@@ -418,7 +416,11 @@ function showBrush(ratio, data) {
         .attr("height", info.height * ratio)
 
     var ctx = document.getElementById('im_canvas').getContext('2d')
-    var url = `${files_path}/frame0.png`
+    let frame_number = 0
+    //var url = `${files_path}frames/frame${frame_number}.png`
+
+
+    var url = `${files_path}/frames/frame0.png`
     var img = new Image();
     img.onload = function () {
         ctx.scale(ratio, ratio);
