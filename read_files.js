@@ -19,18 +19,14 @@ function splitString(str) {
 
 const receivedCurrentPath = window.location.href == "http://localhost:8080/objects-behavior-visual-analysis-system/"? splitString(x) : splitString(window.location.href)
 
-
-
-
 const getDetectionContent = async () => {
     try {
    
         const detectionsResponse = await fetch('http://localhost:8080/tcc/src/modules/videoProcess/uploadFiles/detections.json');
         const detectionsResponseData = await detectionsResponse.json();
         
-        console.log("detectionsResponseData",detectionsResponseData)
-        //const videoInfo = await getVideoInfo()
-        //console.log(videoInfo)
+        const videoInfo = await getVideoInfo()
+        console.log(videoInfo)
 
         const timeBar =  handleTimeBarsInput(detectionsResponseData)
 
@@ -65,16 +61,15 @@ const handleTimeBarsInput = (object) => {
 
 const getVideoInfo = async () => {
     try {
-      //const response = await fetch('http://localhost:3000/run-python');
+      const response = await fetch('http://localhost:3000/run-python');
+      await response.text()
       
       if (!response.ok) {
         throw new Error('Erro ao executar o arquivo Python.');
       }
   
-      const data = await response.json();
-      console.log('videoInfoResponseData', data);
     } catch (error) {
-      console.error('getVideoInfo ->', error);
+      console.error(error);
     }
   };
 
@@ -83,8 +78,6 @@ $.getJSON( `${files_path}/video_infos.json`, function( data ) {
     ratio = calculateRatio()
 })
 
-
 document.addEventListener('DOMContentLoaded',() => {
     getDetectionContent()
 });
-
